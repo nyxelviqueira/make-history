@@ -1,0 +1,137 @@
+/* MVL VERSION */
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/fondo.jpg");
+  background-size: cover;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+}
+
+.fallos {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #6e3b0090;
+  padding: 0.3vh;
+  font-style: italic;
+}
+
+.message-win {
+  background-color: #4caf4f6b;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23%;
+  height: 20%;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.message-win p {
+  margin: 0;
+  font-size: 3vh;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.message-lost {
+  background-color: #f4433655;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23%;
+  height: 20%;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.message-lost p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.link-sin-subrayado {
+  text-decoration: none;
+}
+
+.results-title {
+  color: aliceblue;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 2.5vh;
+}
+
+button {
+  background-color: #6e3b0090;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-size: 1.8vh;
+  color: white;
+  padding: 1.2vh;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.message-position {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 18rem;
+  font-weight: bold;
+  animation-name: zoom-in-out;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+/* TABLET VERSION */
+@media (min-width: 768px) {
+}
+
+/* PC VERSION */
+@media (min-width: 1024px) {
+  .message-win p,
+  .message-lost p {
+    font-size: 1.5rem;
+  }
+  .fallos {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+  }
+}

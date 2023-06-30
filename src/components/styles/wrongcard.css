@@ -1,0 +1,13 @@
+.wrong {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vh;
+  right: 0;
+  margin-top: 5%;
+  margin-right: 2vh;
+  position: absolute;
+}
+
+.wrong-card {
+  height: 6vh;
+}

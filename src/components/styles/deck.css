@@ -1,0 +1,25 @@
+/* MVL VERSION */
+.deck-container {
+  display: inline-flex;
+}
+
+.deck {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.deck-card {
+  position: absolute;
+}
+
+/* TABLET VERSION */
+@media (min-width: 768px) {
+  .deck {
+    margin-top: 4rem;
+    margin-bottom: 8vh;
+  }
+}
+
+/* PC VERSION */

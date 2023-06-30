@@ -1,0 +1,142 @@
+.message-movil {
+  display: none;
+}
+
+.start-container {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start-message {
+  background-color: #6e3b0090;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  padding: 3vh;
+  font-size: 3vh;
+  color: white;
+  text-align: center;
+  line-height: 1.9;
+  max-width: 90%;
+}
+
+/* Nombre usuario */
+
+.enter-username h2 {
+  color: white;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.enter-username input {
+  width: 100%;
+  padding: 1vh;
+  font-size: 2.3vh;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #6e3b00b0;
+  color: white;
+}
+
+input::placeholder {
+  color: rgb(212, 212, 212);
+}
+
+/*Escoger categorías */
+.choose-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-categories h2 {
+  color: white;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.start-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8vh;
+}
+
+.start-container li {
+  background-color: #6e3b0090;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  padding: 2vh;
+  font-size: 2.3vh;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.start-container li:hover {
+  background-color: #6e3b00b0;
+}
+
+.start-container li strong {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.start-container li.selected {
+  background-color: rgba(0, 128, 0, 0.39);
+}
+.start-button {
+  background-color: #6e3b0090;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-size: 2.3vh;
+  color: white;
+  padding: 2.5vh;
+  cursor: pointer;
+}
+
+.error-message {
+  background-color: #6e3b0090;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #6e3b0090;
+  position: absolute;
+  color: red;
+  font-size: 2.5vh;
+  font-weight: 900;
+  bottom: 0;
+  right: 0;
+  margin-right: 5vh;
+}
+
+@media (min-width: 1746px) {
+  .start-button {
+    margin-top: 4vh;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .board {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+
+  .start-container {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

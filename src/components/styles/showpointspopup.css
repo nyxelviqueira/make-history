@@ -1,0 +1,21 @@
+.points-popup {
+  background-color: #6e3b0090;
+  position: absolute;
+  left: 0;
+  margin-left: 10%;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1vh;
+  font-weight: bold;
+  font-size: 2vh;
+  top: 50%;
+  z-index: 20;
+}
+
+.points-popup.positive {
+  color: rgb(4, 196, 4);
+}
+
+.points-popup.negative {
+  color: red;
+}

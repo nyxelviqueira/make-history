@@ -1,0 +1,131 @@
+/* MVL VERSION */
+header {
+  display: flex;
+  padding: 0.1rem;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-header {
+  position: absolute;
+  font-size: 0.5rem;
+  width: 12rem;
+  left: 0;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.name-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.name-header h1 {
+  font-size: 1rem;
+  margin-bottom: -0.3rem;
+}
+
+.cont-nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  margin-right: 3rem;
+  gap: 0.5rem;
+}
+
+.cont-nav .icon {
+  align-items: center;
+  padding: 0.2rem;
+  width: 1.3rem;
+  border: 1px solid black;
+  background-color: #6e3b00;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cont-nav .icon:hover {
+  transform: scale(1.05);
+}
+
+/* TABLET VERSION */
+@media (min-width: 916px) {
+  .message-header {
+    position: absolute;
+    font-size: 0.5rem;
+    width: 18rem;
+    left: 0;
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .name-header h1 {
+    font-size: 25px;
+  }
+
+  .cont-nav .icon {
+    align-items: center;
+    padding: 0.2rem;
+    width: 1rem;
+    border: 1px solid black;
+    background-color: #6e3b00;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .cont-nav .icon:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* PC VERSION */
+@media (min-width: 1200px) {
+  header {
+    margin-bottom: 1rem;
+  }
+  .message-header {
+    position: absolute;
+    font-size: 0.5rem;
+    width: 18rem;
+    left: 0;
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .name-header h1 {
+    font-size: 3rem;
+  }
+
+  .name-header h2 {
+    font-size: 1rem;
+  }
+
+  header nav {
+    gap: 2rem;
+  }
+  .cont-nav .icon {
+    align-items: center;
+    padding: 0.2rem;
+    width: 4rem;
+    border: 1px solid black;
+    background-color: #6e3b00;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .cont-nav .icon:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
+}

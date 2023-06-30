@@ -1,0 +1,51 @@
+/* MVL VERSION */
+.hand-container {
+  background-color: #6e3b0090;
+  border: 2px solid black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 24vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.hand {
+  display: flex;
+  -webkit-box-align: end;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 1px;
+}
+
+.message-start {
+  color: white;
+  font-size: 1rem;
+  display: block;
+}
+
+/* TABLET VERSION */
+@media (min-width: 916px) {
+  .hand-container {
+    height: 10rem;
+  }
+
+  .hand {
+    gap: 0.1;
+  }
+}
+
+/* PC VERSION*/
+@media (min-width: 1024px) {
+  .hand-container {
+    height: 26vh;
+  }
+
+  .message-start {
+    font-size: 2rem;
+    align-items: center;
+  }
+}

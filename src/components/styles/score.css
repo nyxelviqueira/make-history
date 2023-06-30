@@ -1,0 +1,15 @@
+.score {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  left: 0;
+  margin-left: 10%;
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #6e3b0090;
+  padding: 1vh;
+  font-style: italic;
+  font-size: 2vh;
+  top: 30%;
+}
